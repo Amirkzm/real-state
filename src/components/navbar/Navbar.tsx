@@ -21,20 +21,22 @@ const Navbar = () => {
         <a href="/">Agents</a>
       </div>
       <div className="right">
-        <a href="/">Login</a>
-        <a href="/" className="register">
-          Sign Up
-        </a>
-        <div className="menuIcon" onClick={openMenuHandler}>
-          <img src="/menu.png" alt="Menu" />
-        </div>
-        <div className={open ? "menu active" : "menu"}>
-          <a href="/">Home</a>
-          <a href="/">About</a>
-          <a href="/">Contact</a>
-          <a href="/">Agents</a>
+        <div className="rightWrapper">
           <a href="/">Login</a>
-          <a href="/">Sign Up</a>
+          <a href="/" className="register">
+            Sign Up
+          </a>
+          <div className="menuIcon" onClick={openMenuHandler}>
+            <img src="/menu.png" alt="Menu" />
+          </div>
+          <div className={open ? "menu active" : "menu"}>
+            <a href="/">Home</a>
+            <a href="/">About</a>
+            <a href="/">Contact</a>
+            <a href="/">Agents</a>
+            <a href="/">Login</a>
+            <a href="/">Sign Up</a>
+          </div>
         </div>
       </div>
     </nav>

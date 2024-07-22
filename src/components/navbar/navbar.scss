@@ -56,7 +56,10 @@ nav {
     background-color: #fcf5f3;
     height: 100%;
     gap: 10px;
-    padding-right: 10px;
+
+    .rightWrapper {
+      padding: 0 10px;
+    }
 
     .register {
       padding: 10px 20px;
