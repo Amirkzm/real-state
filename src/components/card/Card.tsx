@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import "./card.scss";
-import { locationType } from "../../types/commonTypes";
+import { ListLocationType } from "../../types/commonTypes";
 
 type CardProps = {
-  item: locationType;
+  item: ListLocationType;
 };
 
 const Card: React.FC<CardProps> = ({ item }) => {
