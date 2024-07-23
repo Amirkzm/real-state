@@ -1,3 +1,4 @@
+import { Button } from "../button";
 import TabSelector from "../tabSelector/TabSelector";
 import "./searchBar.scss";
 
@@ -25,9 +26,9 @@ const SearchBar = () => {
           max={10000000}
           placeholder="Max Price"
         />
-        <button onClick={formSubmitHandler}>
+        <Button onClick={formSubmitHandler}>
           <img src="/search.png" alt="" />
-        </button>
+        </Button>
       </form>
     </div>
   );
