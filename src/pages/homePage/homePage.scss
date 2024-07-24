@@ -1,4 +1,6 @@
 @import "../../responsive.scss";
+@import "../../variables.scss";
+
 .homepage {
   display: flex;
   justify-content: space-between;
@@ -81,11 +83,10 @@
 
   .imageContainer {
     flex: 2;
-    background-color: #fcf5f3;
+    background-color: $secondary-color;
     position: relative;
     display: flex;
     align-items: center;
-    padding-right: 10px;
     img {
       width: 115%;
       position: absolute;

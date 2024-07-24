@@ -1,4 +1,5 @@
 @import "../../responsive.scss";
+@import "../../_variables.scss";
 
 .card {
   display: flex;
@@ -34,11 +35,11 @@
     .title {
       font-size: 20px;
       font-weight: 600;
-      color: #444;
+      color: $text-color-dark;
       transition: all 0.4s ease;
 
       &:hover {
-        color: #000;
+        color: $text-color;
         scale: 1.01;
       }
     }
@@ -48,7 +49,7 @@
       display: flex;
       align-items: center;
       gap: 5px;
-      color: #888;
+      color: $text-color-light;
     }
 
     .price {
@@ -56,7 +57,7 @@
       font-weight: 300;
       padding: 5px;
       border-radius: 5px;
-      background-color: rgba(254, 205, 81, 0.438);
+      background-color: $primary-color-light;
       width: max-content;
     }
 
@@ -74,7 +75,7 @@
           display: flex;
           align-items: center;
           gap: 5px;
-          background-color: whitesmoke;
+          background-color: $background-color-light;
           padding: 5px;
           border-radius: 5px;
         }
@@ -83,20 +84,6 @@
       .icons {
         display: flex;
         gap: 20px;
-
-        .icon {
-          border: 1px solid #999;
-          padding: 2px 5px;
-          border-radius: 5px;
-          cursor: pointer;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-
-          &:hover {
-            background-color: lightgray;
-          }
-        }
       }
     }
   }

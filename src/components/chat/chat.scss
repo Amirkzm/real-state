@@ -1,3 +1,5 @@
+@import "../../variables.scss";
+
 .chat {
   height: 100%;
   display: flex;
@@ -16,7 +18,7 @@
     }
 
     .chatItem {
-      background-color: white;
+      background-color: $background-color;
       padding: 20px;
       padding-right: 0;
       border-radius: 10px;
@@ -40,7 +42,7 @@
 
   .chatBox {
     flex: 1;
-    background-color: white;
+    background-color: $background-color;
     min-height: 0;
   }
 }

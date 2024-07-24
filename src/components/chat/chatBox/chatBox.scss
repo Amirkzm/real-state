@@ -1,6 +1,8 @@
+@import "../../../variables.scss";
+
 .chatBox {
   flex: 1;
-  background-color: white;
+  background-color: $background-color;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -22,7 +24,7 @@
       gap: 5px;
 
       .msgTime {
-        color: rgba(41, 41, 41, 0.608);
+        color: $text-color-light;
         font-size: 10px;
         font-weight: 700;
       }
@@ -30,7 +32,7 @@
   }
 
   .bottom {
-    border-top: 2px solid #f7c14b85;
+    border-top: 2px solid $primary-color-dark;
     height: 60px;
     display: flex;
     align-items: center;
@@ -45,7 +47,7 @@
 
     button {
       flex: 1;
-      background-color: #f7c14b85;
+      background-color: $primary-color-dark;
       height: 100%;
       border: none;
       cursor: pointer;
